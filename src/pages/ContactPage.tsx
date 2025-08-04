@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 
+// todo: add proper info for contact form submission
+
 interface ContactFormData {
 	name: string;
 	email: string;
