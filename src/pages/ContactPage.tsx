@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 // todo: add proper info for contact form submission
 
 interface ContactFormData {
-	name: string;
+	full_name: string;
 	email: string;
 	company: string;
 	message: string;
@@ -15,9 +15,13 @@ interface FAQ {
 	answer: string;
 }
 
+interface APIResponse {
+	success: boolean;
+}
+
 const ContactPage: React.FC = (): JSX.Element => {
 	const [formData, setFormData] = useState<ContactFormData>({
-		name: '',
+		full_name: '',
 		email: '',
 		company: '',
 		message: '',
@@ -57,14 +61,31 @@ const ContactPage: React.FC = (): JSX.Element => {
 		}));
 	};
 
-	const handleSubmit = (e: React.FormEvent) => {
+	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
-		console.log('Form submitted:', formData);
-		setIsSubmitted(true);
-		setTimeout(() => {
-			setIsSubmitted(false);
-			setFormData({ name: '', email: '', company: '', message: '' });
-		}, 3000);
+		try {
+			const res = await fetch(
+				'https://0n5m588odf.execute-api.us-east-1.amazonaws.com/default/newLeadMessage',
+				{
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify(formData),
+				}
+			);
+
+			const data: APIResponse = await res.json();
+
+			if (!data.success) {
+				throw new Error(
+					'Submission failed, please use direct email instead, we apologize for the inconvenience'
+				);
+			}
+
+			alert('Submission successful!');
+			setIsSubmitted(true);
+		} catch (error) {
+			alert((error as Error).message);
+		}
 	};
 
 	return (
@@ -113,9 +134,9 @@ const ContactPage: React.FC = (): JSX.Element => {
 										</label>
 										<input
 											type="text"
-											id="name"
-											name="name"
-											value={formData.name}
+											id="full_name"
+											name="full_name"
+											value={formData.full_name}
 											onChange={handleInputChange}
 											required
 											className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors duration-200"
@@ -207,7 +228,7 @@ const ContactPage: React.FC = (): JSX.Element => {
 											className="text-red-800 hover:text-red-900 transition-colors duration-200"
 											aria-label="Email RD4 Consulting"
 										>
-											contact@rd4consulting.com
+											rhdowns@rd4consulting.com
 										</a>
 									</div>
 								</div>

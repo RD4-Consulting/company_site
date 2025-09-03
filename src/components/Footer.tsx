@@ -43,11 +43,11 @@ const Footer: React.FC = (): JSX.Element => {
 							<div className="flex items-center space-x-3">
 								<Mail className="h-5 w-5 text-red-400" aria-hidden="true" />
 								<a
-									href="mailto:contact@rd4consulting.com"
+									href="mailto:rhdowns@rd4consulting.com"
 									className="text-gray-300 hover:text-white transition-colors duration-200"
 									aria-label="Email RD4 Consulting"
 								>
-									contact@rd4consulting.com
+									rhdowns@rd4consulting.com
 								</a>
 							</div>
 							<div className="flex items-center space-x-3">

@@ -90,7 +90,7 @@ const Header: React.FC = (): JSX.Element => {
 						<img
 							src="https://rd4.s3.us-east-1.amazonaws.com/logos/rd4_logo.png"
 							alt="RD4 Logo"
-							className="h-20 w-24 w-auto"
+							className="h-20 w-auto"
 						/>
 					</Link>
 					<div className="hidden md:flex space-x-8 items-center">
