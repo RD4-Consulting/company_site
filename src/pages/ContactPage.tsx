@@ -99,8 +99,7 @@ const ContactPage: React.FC = (): JSX.Element => {
 										Thank you for your message!
 									</h3>
 									<p className="text-green-700">
-										We've received your inquiry and will get back to you within
-										24 hours.
+										We've received your inquiry and will get back to you soon.
 									</p>
 								</div>
 							) : (
@@ -210,9 +209,6 @@ const ContactPage: React.FC = (): JSX.Element => {
 										>
 											contact@rd4consulting.com
 										</a>
-										<p className="text-gray-600 mt-1">
-											We typically respond within 24 hours
-										</p>
 									</div>
 								</div>
 								<div className="flex items-start space-x-4">
@@ -231,10 +227,10 @@ const ContactPage: React.FC = (): JSX.Element => {
 											className="text-red-800 hover:text-red-900 transition-colors duration-200"
 											aria-label="Call RD4 Consulting"
 										>
-											+1 (111) 111-1111
+											+1 (919) 600-1916
 										</a>
 										<p className="text-gray-600 mt-1">
-											Monday - Friday, 9:00 AM - 6:00 PM PST
+											Monday - Friday, 9:00 AM - 6:00 PM EST
 										</p>
 									</div>
 								</div>
@@ -250,9 +246,9 @@ const ContactPage: React.FC = (): JSX.Element => {
 											Office
 										</h3>
 										<address className="text-gray-700 not-italic">
-											123 Innovation Drive
+											216 Grantwood Dr.
 											<br />
-											Raleigh, NC 27601
+											Holly Springs, NC 27540
 											<br />
 											United States
 										</address>

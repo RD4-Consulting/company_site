@@ -62,13 +62,13 @@ const Header: React.FC = (): JSX.Element => {
 			path: '/services/application-management',
 			label: 'Application Management',
 		},
-		{ path: '/services/data-migrations', label: 'Data/Systems Migrations' },
+		{ path: '/services/data-migrations', label: 'Data Migrations' },
 		{ path: '/services/enhancements', label: 'Enhancements' },
 		{
 			path: '/services/project-implementation',
-			label: 'Full Project Implementation',
+			label: 'Project Implementation',
 		},
-		{ path: '/services/system-upgrades', label: 'System/Application Upgrades' },
+		{ path: '/services/system-upgrades', label: 'System Upgrades' },
 		{ path: '/services/system-integration', label: 'System Integration' },
 	];
 
@@ -108,7 +108,6 @@ const Header: React.FC = (): JSX.Element => {
 								{item.label}
 							</Link>
 						))}
-						{/* Services Dropdown */}
 						<div className="relative" ref={servicesRef}>
 							<button
 								onClick={toggleServices}

@@ -12,27 +12,27 @@ const HomePage: React.FC = (): JSX.Element => {
 	const services: Service[] = [
 		{
 			icon: Code,
-			title: 'Custom Development',
+			title: 'Windchill Configurations',
 			description:
-				'Tailored software solutions built to meet your specific business needs and requirements.',
+				'Seamless configurations of PTC Windchill to accelerate your digital transformation and maximize product lifecycle value.',
 		},
 		{
 			icon: Cloud,
-			title: 'Cloud Solutions',
+			title: 'Windchill Customizations',
 			description:
-				'Scalable cloud infrastructure and migration services to modernize your technology stack.',
+				'Expert-led customizations utilizing powerful backend capabilities, ensuring flexible and tailored solutions.',
 		},
 		{
 			icon: Users,
-			title: 'Team Augmentation',
+			title: 'Windchill Integrations',
 			description:
-				'Expert developers and consultants to extend your team and accelerate project delivery.',
+				'Integrate Windchill with ERP, CAD, and other enterprise systems to facilitate end to end digital engineering.',
 		},
 		{
 			icon: Zap,
-			title: 'Digital Transformation',
+			title: 'Windchill Automations',
 			description:
-				'End-to-end digital transformation strategies to optimize your business processes.',
+				'Leverage modern automation tools and techniques to deliver quickly and consistently within Agile methodologies.',
 		},
 	];
 
@@ -43,21 +43,23 @@ const HomePage: React.FC = (): JSX.Element => {
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 						<div>
 							<h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-								Transform Your Business with
+								Unlock the Power of your custom PLM Solution
 								<span className="text-red-300 block">
-									Expert Software Consulting
+									Your Trusted PTC Windchill Experts
 								</span>
 							</h1>
 							<p className="text-xl text-red-100 mb-8 leading-relaxed">
-								RD4 delivers cutting-edge software solutions and strategic
-								technology consulting to help your business thrive in the
-								digital age.
+								RD4 Consulting specializes in PTC Windchill
+								solutions—configurations, customizations, integrations, and
+								streamlined deliveries. Empower your product lifecycle
+								management and drive innovation with our certified PTC
+								consultants.
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4">
 								<Link
 									to="/contact"
 									className="inline-flex items-center justify-center px-8 py-4 bg-white text-red-800 font-semibold rounded-lg hover:bg-red-50 transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-300"
-									aria-label="Get started with RD4 consulting services"
+									aria-label="Get started with Windchill and PTC services"
 								>
 									Get Started
 									<ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
@@ -65,7 +67,7 @@ const HomePage: React.FC = (): JSX.Element => {
 								<Link
 									to="/about"
 									className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-red-800 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-red-300"
-									aria-label="Learn more about RD4"
+									aria-label="Learn more about Windchill and PTC"
 								>
 									Learn More
 								</Link>
@@ -74,7 +76,7 @@ const HomePage: React.FC = (): JSX.Element => {
 						<div className="relative">
 							<img
 								src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800"
-								alt="Team of software developers collaborating on a project"
+								alt="Windchill and PTC experts collaborating on a project"
 								className="rounded-lg shadow-2xl w-full h-auto"
 								loading="eager"
 							/>
@@ -95,11 +97,12 @@ const HomePage: React.FC = (): JSX.Element => {
 							id="services-heading"
 							className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
 						>
-							Our Core Services
+							PTC Windchill PLM Services
 						</h2>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
-							We provide comprehensive software consulting services to help your
-							business leverage technology for growth and innovation.
+							Accelerate your digital transformation with our full suite of PTC
+							Windchill solutions—configuration, customization, integrations,
+							streamlined deliveries.
 						</p>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -128,16 +131,17 @@ const HomePage: React.FC = (): JSX.Element => {
 			<section className="py-20 bg-red-800 text-white">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 					<h2 className="text-3xl sm:text-4xl font-bold mb-6">
-						Ready to Transform Your Business?
+						Ready to Elevate Your Windchill Experience?
 					</h2>
 					<p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-						Let's discuss how our expert consulting services can help you
-						achieve your technology goals and drive business growth.
+						Connect with our PTC Windchill experts to discuss your PLM goals,
+						streamline your processes, and unlock the full value of your PTC
+						investment.
 					</p>
 					<Link
 						to="/contact"
 						className="inline-flex items-center justify-center px-8 py-4 bg-white text-red-800 font-semibold rounded-lg hover:bg-red-50 transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-300"
-						aria-label="Contact RD4 for consulting services"
+						aria-label="Contact RD4 for Windchill and PTC services"
 					>
 						Contact Us Today
 						<ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />

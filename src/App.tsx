@@ -21,7 +21,7 @@ function App(): JSX.Element {
 							element={
 								<ServicePage
 									title="Application Management"
-									description="Manage your applications effectively."
+									description="Maximize your business value with our tailored application management services. We offer scalable, proactive support designed to optimize your operations and adapt to your evolving needs, ensuring your systems run smoothly and efficiently."
 								/>
 							}
 						/>
@@ -30,7 +30,7 @@ function App(): JSX.Element {
 							element={
 								<ServicePage
 									title="Data Migrations"
-									description="Seamlessly migrate your data with our expert services."
+									description="Unlock new possibilities with seamless data and system migrations. Our experienced team ensures a smooth transition, leveraging deep business and technical expertise to enhance your data quality and system performance while minimizing disruption."
 								/>
 							}
 						/>
@@ -39,7 +39,7 @@ function App(): JSX.Element {
 							element={
 								<ServicePage
 									title="Enhancements"
-									description="Seamlessly enhance your systems with our expert services."
+									description="Elevate your existing solutions with our enhancement services. We work closely with you to tailor your systems, ensuring they meet your unique business requirements and deliver lasting value."
 								/>
 							}
 						/>
@@ -48,7 +48,7 @@ function App(): JSX.Element {
 							element={
 								<ServicePage
 									title="Project Implementation"
-									description="Ensure successful project delivery with our implementation services."
+									description="Achieve your business goals with confidence through our comprehensive project implementation services. We partner with your team to develop realistic, results-driven plans that align with your priorities and deliver measurable outcomes."
 								/>
 							}
 						/>
@@ -57,7 +57,7 @@ function App(): JSX.Element {
 							element={
 								<ServicePage
 									title="System Upgrades"
-									description="Upgrade your systems seamlessly with our expert services."
+									description="Empower your business with expertly managed system upgrades. Our team leverages deep expertise in PTC's PLM suite, including Windchill and FlexPLM, to deliver upgrades that are tailored to your needs, minimize risk, and maximize system performance."
 								/>
 							}
 						/>
@@ -66,7 +66,7 @@ function App(): JSX.Element {
 							element={
 								<ServicePage
 									title="System Integration"
-									description="Integrate your systems seamlessly with our expert services."
+									description="Connect your business like never before with our system integration services. We specialize in unifying data and processes across platforms, enabling you to make smarter decisions and drive innovation."
 								/>
 							}
 						/>

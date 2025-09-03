@@ -5,7 +5,6 @@ interface TeamMember {
 	name: string;
 	role: string;
 	image: string;
-	bio: string;
 }
 
 interface Value {
@@ -60,21 +59,36 @@ const AboutPage: React.FC = (): JSX.Element => {
 			role: 'CEO & Founder',
 			image:
 				'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
-			bio: '15+ years in software development and business strategy.',
-		},
-		{
-			name: 'Timmy Wilmot',
-			role: 'Tech Lead',
-			image:
-				'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=400',
-			bio: 'Specializes in enterprise solutions and client relationships.',
 		},
 		{
 			name: 'Alexander Gonzalez',
-			role: 'Cloud Architect',
+			role: 'Software Consultant',
 			image:
 				'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
-			bio: 'Expert in cloud architecture and digital transformation.',
+		},
+		{
+			name: 'Alex Melton',
+			role: 'Software Consultant',
+			image:
+				'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
+		},
+		{
+			name: 'David Cubrilla',
+			role: 'Software Consultant',
+			image:
+				'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
+		},
+		{
+			name: 'Leo Ascenzi',
+			role: 'Software Consultant',
+			image:
+				'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
+		},
+		{
+			name: 'Timmy Wilmot',
+			role: 'Software Consultant',
+			image:
+				'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=400',
 		},
 	];
 
@@ -205,7 +219,7 @@ const AboutPage: React.FC = (): JSX.Element => {
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="text-center mb-16">
 						<h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-							Leadership Team
+							Team Members
 						</h2>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
 							Meet the experienced professionals who lead our consulting
@@ -215,17 +229,18 @@ const AboutPage: React.FC = (): JSX.Element => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 						{teamMembers.map((member: TeamMember, index: number) => (
 							<div key={index} className="text-center">
-								<img
-									src={member.image}
-									alt={`${member.name}, ${member.role} at RD4 Consulting`}
-									className="w-48 h-48 rounded-full mx-auto mb-6 object-cover shadow-lg"
-									loading="lazy"
-								/>
+								<div className="w-48 h-48 rounded-full mx-auto mb-6 flex items-center justify-center bg-red-800 shadow-lg">
+									<img
+										src="https://rd4.s3.us-east-1.amazonaws.com/logos/rd4_favicon.png"
+										alt="RD4 Consulting"
+										className="w-24 h-24 object-contain"
+										loading="lazy"
+									/>
+								</div>
 								<h3 className="text-xl font-semibold text-gray-900 mb-2">
 									{member.name}
 								</h3>
 								<p className="text-red-700 font-medium mb-3">{member.role}</p>
-								<p className="text-gray-600">{member.bio}</p>
 							</div>
 						))}
 					</div>
