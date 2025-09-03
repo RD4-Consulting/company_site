@@ -5,10 +5,12 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ServicePage from './components/ServicePage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App(): JSX.Element {
 	return (
 		<Router>
+			<ScrollToTop />
 			<div className="min-h-screen flex flex-col">
 				<Header />
 				<div className="flex-grow">
@@ -16,57 +18,40 @@ function App(): JSX.Element {
 						<Route path="/" element={<HomePage />} />
 						<Route path="/about" element={<AboutPage />} />
 						<Route path="/contact" element={<ContactPage />} />
+
 						<Route
-							path="/services/application-management"
+							path="/services/windchill-configurations"
 							element={
 								<ServicePage
-									title="Application Management"
-									description="Maximize your business value with our tailored application management services. We offer scalable, proactive support designed to optimize your operations and adapt to your evolving needs, ensuring your systems run smoothly and efficiently."
+									title="Windchill Configurations"
+									description="At RD4, we specialize in configuring PTC Windchill to fit your unique business needs. Our team follows industry best practices and proven methodologies to ensure a seamless and robust setup. We work closely with your stakeholders to align system capabilities with your goals, maximizing the value of your PLM investment. Let us help you accelerate your digital transformation and drive operational excellence."
 								/>
 							}
 						/>
 						<Route
-							path="/services/data-migrations"
+							path="/services/windchill-customizations"
 							element={
 								<ServicePage
-									title="Data Migrations"
-									description="Unlock new possibilities with seamless data and system migrations. Our experienced team ensures a smooth transition, leveraging deep business and technical expertise to enhance your data quality and system performance while minimizing disruption."
+									title="Windchill Customizations"
+									description="Unlock the full potential of Windchill with our expert customizations. We leverage advanced backend capabilities to deliver solutions that are flexible, scalable, and tailored to your specific requirements. Our consultants collaborate with you to design enhancements that streamline workflows and improve user experience. With RD4, your Windchill environment evolves as your business grows."
 								/>
 							}
 						/>
 						<Route
-							path="/services/enhancements"
+							path="/services/windchill-integrations"
 							element={
 								<ServicePage
-									title="Enhancements"
-									description="Elevate your existing solutions with our enhancement services. We work closely with you to tailor your systems, ensuring they meet your unique business requirements and deliver lasting value."
+									title="Windchill Integrations"
+									description="Seamlessly connect Windchill with ERP, CAD, and other enterprise systems to enable true end-to-end digital engineering. Our integration services ensure data flows securely and efficiently across your technology landscape, eliminating silos and manual work. We design integrations that support your business processes and future growth. Experience the benefits of a unified, intelligent ecosystem with RD4."
 								/>
 							}
 						/>
 						<Route
-							path="/services/project-implementation"
+							path="/services/windchill-automations"
 							element={
 								<ServicePage
-									title="Project Implementation"
-									description="Achieve your business goals with confidence through our comprehensive project implementation services. We partner with your team to develop realistic, results-driven plans that align with your priorities and deliver measurable outcomes."
-								/>
-							}
-						/>
-						<Route
-							path="/services/system-upgrades"
-							element={
-								<ServicePage
-									title="System Upgrades"
-									description="Empower your business with expertly managed system upgrades. Our team leverages deep expertise in PTC's PLM suite, including Windchill and FlexPLM, to deliver upgrades that are tailored to your needs, minimize risk, and maximize system performance."
-								/>
-							}
-						/>
-						<Route
-							path="/services/system-integration"
-							element={
-								<ServicePage
-									title="System Integration"
-									description="Connect your business like never before with our system integration services. We specialize in unifying data and processes across platforms, enabling you to make smarter decisions and drive innovation."
+									title="Windchill Automations"
+									description="Transform your operations with Windchill automations designed for speed and reliability. We implement modern automation tools and techniques to streamline repetitive tasks, reduce errors, and boost productivity. Our team works within Agile frameworks to deliver solutions quickly and adapt to your evolving needs. Let RD4 help you achieve consistent, high-quality results through intelligent automation."
 								/>
 							}
 						/>

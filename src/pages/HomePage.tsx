@@ -111,9 +111,9 @@ const HomePage: React.FC = (): JSX.Element => {
 							return (
 								<div
 									key={index}
-									className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1 border border-gray-100"
+									className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1 border border-gray-100 text-center"
 								>
-									<div className="text-red-800 mb-4">
+									<div className="text-red-800 mb-4 flex justify-center">
 										<IconComponent className="h-12 w-12" aria-hidden="true" />
 									</div>
 									<h3 className="text-xl font-semibold text-gray-900 mb-3">

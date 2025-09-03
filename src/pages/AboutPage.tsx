@@ -47,10 +47,10 @@ const AboutPage: React.FC = (): JSX.Element => {
 	];
 
 	const stats: Stats[] = [
-		{ number: '200+', label: 'Projects Completed' },
-		{ number: '50+', label: 'Happy Clients' },
-		{ number: '8+', label: 'Years Experience' },
-		{ number: '25+', label: 'Team Members' },
+		{ number: '100+', label: 'Customizations Completed' },
+		{ number: '15+', label: 'Integrations Developed' },
+		{ number: '10+', label: 'Upgrades Executed' },
+		{ number: '40+', label: 'Years Experience' },
 	];
 
 	const teamMembers: TeamMember[] = [
@@ -117,19 +117,20 @@ const AboutPage: React.FC = (): JSX.Element => {
 							</h2>
 							<div className="space-y-6 text-gray-600 leading-relaxed">
 								<p>
-									Founded in 2023, RD4 Consulting was born from a simple yet
-									powerful vision: to bridge the gap between business needs and
-									technology solutions. Our founders, experienced software
-									engineers and business strategists, recognized that many
-									companies struggled to effectively leverage technology for
-									growth.
+									Founded in 2015, RD4 Consulting was born from a simple yet
+									powerful vision: to drive technology solutions to meet
+									business needs through excellent consultants. Our founder, an
+									experienced software architect and business strategist, built
+									a company grounded in integrity, technical expertise, and a
+									passion for solving real-world business challenges through
+									software.
 								</p>
 								<p>
-									Over the years, we've grown from a small team of consultants
-									to a comprehensive software consulting firm, serving clients
-									ranging from startups to Fortune 500 companies. Our success is
-									built on a foundation of technical excellence, strategic
-									thinking, and unwavering commitment to client satisfaction.
+									Over the years, we've built strong relationships with several
+									clients, including influential Fortune 500 companies. Our
+									success is built on a foundation of technical excellence,
+									strategic thinking, and unwavering commitment to client
+									satisfaction.
 								</p>
 								<p>
 									Today, we continue to evolve and adapt to the ever-changing

@@ -9,17 +9,21 @@ interface ServiceItem {
 const Footer: React.FC = (): JSX.Element => {
 	const serviceItems: ServiceItem[] = [
 		{
-			path: '/services/application-management',
-			label: 'Application Management',
+			path: '/services/windchill-configurations',
+			label: 'Windchill Configurations',
 		},
-		{ path: '/services/data-migrations', label: 'Data Migrations' },
-		{ path: '/services/enhancements', label: 'Enhancements' },
 		{
-			path: '/services/project-implementation',
-			label: 'Project Implementation',
+			path: '/services/windchill-customizations',
+			label: 'Windchill Customizations',
 		},
-		{ path: '/services/system-upgrades', label: 'System Upgrades' },
-		{ path: '/services/system-integration', label: 'System Integration' },
+		{
+			path: '/services/windchill-integrations',
+			label: 'Windchill Integrations',
+		},
+		{
+			path: '/services/windchill-automations',
+			label: 'Windchill Automations',
+		},
 	];
 
 	return (
